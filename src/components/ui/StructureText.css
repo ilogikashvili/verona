@@ -1,0 +1,22 @@
+.structure-text {
+  width: 100%;
+  max-width: 1120px;
+}
+
+.structure-text-heading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 120%;
+  color: #000000;
+  margin-bottom: 18px;
+}
+
+.structure-text-description {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.8;
+  color: #1f1f1f;
+  max-width: 900px;
+}

@@ -1,0 +1,21 @@
+.structure-section {
+  width: 100vw;
+  padding: 64px 24px 96px;
+  background: #f7f7f7;
+}
+
+.structure-section-inner {
+  width: 86.35vw;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .structure-section {
+    padding: 48px 16px 64px;
+  }
+
+  .structure-section-inner {
+    width: calc(100vw - 32px);
+  }
+}

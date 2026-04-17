@@ -1,0 +1,76 @@
+.product-display-page {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+  overflow-x: hidden;
+  margin-top: -110px;
+  padding-top: 0;
+}
+
+.product-display-hero {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.product-display-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0.72) 100%);
+}
+
+.product-display-hero-overlay {
+  position: absolute;
+  left: 48px;
+  bottom: 48px;
+  max-width: 56vw;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  z-index: 1;
+}
+
+.product-display-hero-name {
+  font-family: 'Lora', serif;
+  font-size: clamp(4rem, 6vw, 7rem);
+  font-weight: 700;
+  line-height: 0.95;
+  color: #ffffff;
+}
+
+.product-display-hero-breadcrumbs {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.86);
+  letter-spacing: 0.04em;
+}
+
+.product-display-hero-description {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.92);
+  max-width: 760px;
+}
+
+@media (max-width: 900px) {
+  .product-display-hero-overlay {
+    left: 24px;
+    bottom: 24px;
+    max-width: 90vw;
+  }
+
+  .product-display-hero-name {
+    font-size: clamp(3rem, 10vw, 5rem);
+  }
+}

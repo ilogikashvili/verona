@@ -1,0 +1,30 @@
+.ui-text {
+  margin: 0;
+  padding: 0;
+  color: white;
+  line-height: 1.15;
+}
+
+.ui-text-year {
+  font-size: clamp(0.9rem, 1.4vw, 1.2rem);
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  opacity: 0.95;
+}
+
+.ui-text-big {
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  font-weight: 700;
+  line-height: 1.02;
+  text-align: center;
+}
+
+.ui-text-small {
+  font-size: clamp(1rem, 1.8vw, 1.5rem);
+  font-weight: 500;
+  line-height: 1.5;
+  max-width: 70ch;
+  text-align: center;
+  opacity: 0.95;
+}

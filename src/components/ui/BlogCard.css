@@ -1,0 +1,149 @@
+.blog-card {
+  cursor: pointer;
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Featured large blog card */
+.blog-card-featured {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 0;
+  min-height: 480px;
+}
+
+.blog-card-featured .blog-card-image-wrapper {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.blog-card-featured .blog-card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 100%);
+  padding: 3rem 2rem 2rem;
+  color: white;
+}
+
+.blog-card-featured .blog-card-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.blog-card-featured .blog-card-description {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  opacity: 0.9;
+  margin-bottom: 1.5rem;
+}
+
+.blog-card-featured .blog-card-date {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Small sidebar blog cards */
+.blog-card-small {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+}
+
+.blog-card-small .blog-card-image-wrapper {
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.blog-card-small .blog-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blog-card-small .blog-card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-card-small .blog-card-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+  color: #1a1a1a;
+}
+
+.blog-card-small .blog-card-description {
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.4;
+  margin-bottom: 0.8rem;
+  flex: 1;
+}
+
+.blog-card-small .blog-card-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #999;
+}
+
+/* Image wrapper shared styles */
+.blog-card-image-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.blog-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Content shared */
+.blog-card-content {
+  padding: 1rem;
+}
+
+.blog-card-title {
+  margin: 0 0 0.5rem;
+  font-family: 'Poppins', sans-serif;
+  color: inherit;
+}
+
+.blog-card-description {
+  margin: 0 0 1rem;
+  color: #666;
+}
+
+.blog-card-meta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.85rem;
+  color: #999;
+}
+
+.blog-card-read-time,
+.blog-card-date {
+  display: inline;
+}
